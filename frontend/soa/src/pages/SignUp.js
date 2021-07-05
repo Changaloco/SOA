@@ -8,12 +8,12 @@ export default class SignUp extends Component {
 
                 <div className="form-group">
                     <label>Nombre</label>
-                    <input type="text" className="form-control" placeholder="Nombre" />
+                    <input type="text" className="form-control" placeholder="nombre" />
                 </div>
 
                 <div className="form-group">
                     <label>Apellidos</label>
-                    <input type="text" className="form-control" placeholder="Apellidos" />
+                    <input type="text" className="form-control" placeholder="apellidos" />
                 </div>
 
                 <div className="form-group">
@@ -72,7 +72,7 @@ export default class SignUp extends Component {
                 <div className="form-group">
                     <div className="custom-control custom-checkbox">
                         <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Acepta los terminos y condiciones?</label>
+                        <label className="custom-control-label" htmlFor="customCheck1">Acepta los terminos y condiciones</label>
                     </div>
                 </div>
 
@@ -81,7 +81,7 @@ export default class SignUp extends Component {
 
                 <button type="submit" className="btn btn-primary btn-block">Registrarse</button>
                 <p className="forgot-password text-right">
-                    Ya estas registrado <a href="#">Inicia Sesion?</a>
+                    Ya estas registrado <a href="#">Inicia Sesion</a>
                 </p>
             </form>
         );
