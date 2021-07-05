@@ -8,47 +8,47 @@ export default class SignUp extends Component {
 
                 <div className="form-group">
                     <label>Nombre</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+                    <input type="text" className="form-control" placeholder="Nombre" />
                 </div>
 
                 <div className="form-group">
                     <label>Apellidos</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
+                    <input type="text" className="form-control" placeholder="Apellidos" />
                 </div>
 
                 <div className="form-group">
                     <label>Correo Electronico</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="email" className="form-control" placeholder="correo electronico" />
                 </div>
 
                 <div className="form-group">
-                    <label>Contrasena</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <label>Contraseña</label>
+                    <input type="password" className="form-control" placeholder="contraseña" />
                 </div>
 
                 <div className="form-group">
-                    <label>Fotografia del perfil</label>
+                    <label>Fotografia del Usuario</label>
                     <input type="file" className="form-control"  />
                 </div>
 
                 <div className="form-group">
                     <label>Acta de Nacimiento</label>
-                    <input type="file" className="form-control" placeholder="Enter password" />
+                    <input type="file" className="form-control" placeholder="" />
                 </div>
 
                 <div className="form-group">
                     <label>INE/IFE</label>
-                    <input type="file" className="form-control" placeholder="Enter password" />
+                    <input type="file" className="form-control" placeholder="" />
                 </div>
                 
                 <div className="form-group">
                     <label>CURP</label>
-                    <input type="file" className="form-control" placeholder="Enter password" />
+                    <input type="file" className="form-control" placeholder="" />
                 </div>
                 
                 <div className="form-group">
                     <label>Comprobante de domicilio</label>
-                    <input type="file" className="form-control" placeholder="Enter password" />
+                    <input type="file" className="form-control" placeholder="" />
                 </div>
                 
                 <div className="form-group">

@@ -12,7 +12,7 @@ export default class Login extends Component {
                 </div>
 
                 <div className="form-group">
-                    <label>Contrasena</label>
+                    <label>Contraseña</label>
                     <input type="password" className="form-control" placeholder="Ingrese contrasena" />
                 </div>
 
@@ -25,7 +25,7 @@ export default class Login extends Component {
 
                 <button type="submit" className="btn btn-primary btn-block">Iniciar Sesion</button>
                 <p className="forgot-password text-right">
-                    Olvidaste la <a href="#">contrasena?</a>
+                    ¿Olvidaste la <a href="#">contraseña?</a>
                 </p>
             </form>
         );
