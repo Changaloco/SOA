@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import  Checkout from './pages/Checkout';
-
 
 function App() {
   return (<Router>
@@ -21,9 +19,6 @@ function App() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/sign-up"}>Registrarse</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/Address"}>Pagos</Link>
               </li>
             </ul>
           </div>
