@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
-import AddressForm from './pages/Address';
+import  Checkout from './pages/Checkout';
+
 
 function App() {
   return (<Router>
@@ -35,6 +36,7 @@ function App() {
             <Route exact path='/' component={Login} />
             <Route path="/sign-in" component={Login} />
             <Route path="/sign-up" component={SignUp} />
+            <Route path="/checkout" component={Checkout} />
           </Switch>
         </div>
       </div>
