@@ -11,4 +11,17 @@ router.post('/', async (req, res) =>{
     res.json(user);
 })
 
+router.put('/:usuarioid', async (req, res) =>{
+    await User.update(req.body,{
+        where:{idUsuario:req.params.usuarioid}
+    });
+    res.json({sucess:'Usuario actualizado'});
+})
+
+router.delete('/:usuarioid', async (req, res) =>{
+    await User.destroy(req.body,{where:{
+        idUsuario:req.params.usuarioid}});
+        res.json({sucess:'Usuario Eliminado'});
+})
+
 module.exports = router;
