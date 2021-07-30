@@ -19,9 +19,10 @@ router.put('/:usuarioid', async (req, res) =>{
 })
 
 router.delete('/:usuarioid', async (req, res) =>{
-    await User.destroy(req.body,{where:{
-        idUsuario:req.params.usuarioid}});
-        res.json({sucess:'Usuario Eliminado'});
+    await User.destroy({
+        where:{idUsuario:req.params.usuarioid}
+    });
+    res.json({sucess:'Usuario Eliminado'});
 })
 
 module.exports = router;
