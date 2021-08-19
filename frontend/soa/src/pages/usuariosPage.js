@@ -16,7 +16,7 @@ export default function Usuarios() {
     nombre:"",
     apellidoPaterno:"",
     apellidoMaterno:"",
-    usuario:"",
+    usuarioU:"",
     password:""
   });
 
@@ -30,7 +30,7 @@ export default function Usuarios() {
   //*funciones axios
   const insertUsuario = async () => {
     await axios
-      .post("usuarios/", usuarioSelect)
+      .post("usuarios/register/", usuarioSelect)
       .then(
         (response) => setUsuarios(usuarios.concat(response.data)),
         OpenCloseModalInsert(),
@@ -50,7 +50,7 @@ export default function Usuarios() {
             usuarios.nombre = usuarioSelect.nombre;
             usuarios.apellidoPaterno = usuarioSelect.apellidoPaterno;
             usuarios.apellidoMaterno = usuarioSelect.apellidoMaterno;
-            usuarios.usuario = usuarioSelect.usuario;
+            usuarios.usuarioU = usuarioSelect.usuarioU;
             usuarios.password = usuarioSelect.password;
           }
         });
@@ -132,7 +132,7 @@ export default function Usuarios() {
                   <td>{usuarios.nombre}</td>
                   <td>{usuarios.apellidoPaterno}</td>
                   <td>{usuarios.apellidoMaterno}</td>
-                  <td>{usuarios.usuario}</td>
+                  <td>{usuarios.usuarioU}</td>
                   <td>{usuarios.password}</td>
                   <td>
                     <Button
@@ -176,12 +176,16 @@ export default function Usuarios() {
             </Form.Group>
             <Form.Group>
               <Form.Label>Usuario</Form.Label>
-              <Form.Control name="usuario" onChange={handleChange} />
+              <Form.Control name="usuarioU" onChange={handleChange} />
             </Form.Group>
             <Form.Group>
               <Form.Label>Password</Form.Label>
               <Form.Control name="password" onChange={handleChange} />
             </Form.Group>
+            <Form.Group controlId="formFile" className="mb-3">
+    <Form.Label>Foto de perfil</Form.Label>
+    <Form.Control type="file" />
+  </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
@@ -221,7 +225,7 @@ export default function Usuarios() {
               name="apellidoMaterno" onChange={handleChange} />
             </Form.Group>
             <Form.Group>
-              <Form.Label>Usuario</Form.Label>
+              <Form.Label>UsuarioU</Form.Label>
               <Form.Control
               value={usuarioSelect && usuarioSelect.usuario}
               name="usuario" onChange={handleChange} />
