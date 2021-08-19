@@ -14,10 +14,13 @@ module.exports = (sequelize,type) => {
         apellidoMaterno: {
             type:type.STRING
         },
-        usuario:{
+        usuarioU:{
             type:type.STRING
         },
         password:{
+            type:type.STRING
+        },
+        fotoUsuario:{
             type:type.STRING
         }
 
